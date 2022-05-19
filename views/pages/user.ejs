@@ -1,0 +1,39 @@
+<%- include ('../partials/head')%>
+<%- include ('../partials/header')%>
+<main class="userInfoMain">
+  
+  <div class="userInfoBox">
+    <h4 class="userPageH4"><%= name %></h4>
+      <p>Email: <%= email %></p>
+      <p>Mobile: <%= mobile %></p>
+      <p>Date: <%= date %></p>
+      <p>Role: <%= role %></p>
+      <form action="/pages/user/delete/<%= _id %>" method="post">
+        <button id="deleteUserBtn">Delete user</button>
+      </form>
+  </div>
+
+  <div class="userInfoBox2">
+    <h4 class="updateUserH4">Uppdatera user information</h4>
+      <form class="createUserForm" action="/pages/members/update/<%= _id %>" method="post">
+          <label class="createUserLabel" for="name">Namn</label><br>
+          <input type="text" id="name" name="name" value="<%= name %>" required>
+          <br>
+          <label class="createUserLabel" for="email">E-post</label><br>
+          <input type="email" id="email" name="email" value="<%= email %>" required>
+          <br>
+          <label class="createUserLabel" for="mobile">Telefonnummer</label><br>
+          <input type="number" id="phone" name="mobile" value="<%= mobile %>" required>
+          <br>
+          <label class="createUserLabel" for="date">Datum</label><br>
+          <input type="date" id="date" name="date" value="<%= date %>" required>
+          <br>
+          <label class="createUserLabel" for="role">Role in circus</label><br>
+          <input type="text" id="role" name="role" value="<%= role %>">
+          <br><br>
+          <button class="btnUpdate">Uppdatera user information</button>
+      </form>
+  </div>
+</main>
+
+<%- include ('../partials/footer')%>

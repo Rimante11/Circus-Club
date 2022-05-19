@@ -1,0 +1,32 @@
+<%- include ('../partials/head')%>
+<%- include ('../partials/header')%>
+<main class="membersMain">
+  <div class="memberMainBox1 memberBox">
+    <img src="/images/user-face.jpg" alt="user-face" class="userFace">
+  </div>
+
+  <div class="memberMainBox2 memberBox">
+    <h1 class="membersH1">Members</h1>
+      <div class="filters">
+          <a class="btnSort" href="/pages/members/sort/asc">Sortera A-Ö</a>
+          <a class="btnSort" href="/pages/members/sort/desc">Sortera Ö-A</a>
+          <a class="btnSort" href="/pages/members">Standard sortering</a>
+      </div>
+
+      <ul>
+        <% members.forEach(user => { %>
+          <li class="memberInfo">
+            <a href="/pages/user/<%= user._id %>">
+            <%= user.name %>
+            </a>
+          </li>  
+        <% }) %>
+      </ul>
+  </div>
+
+  <div class="memberMainBox3 memberBox">
+    <img src="/images/cloneFace.jpg" alt="user-face" class="userFace">
+  </div>
+</main>
+
+<%- include ('../partials/footer')%>

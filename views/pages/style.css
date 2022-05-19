@@ -1,0 +1,241 @@
+body{
+  background-color: rgb(249, 248, 240);
+}
+
+.pagesNav{
+  background-color: rgb(207, 92, 50);
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.a1, .a2, .a3{
+  color: antiquewhite;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  padding: 0px 25px 0px 25px;
+}
+
+.a1:hover, .a2:hover, .a3:hover {
+  color: blueviolet;
+  background-color: antiquewhite;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+/*--Cicus Club logo*/
+.title{
+  background-color: rgb(146, 49, 130);
+  border-radius: 10px;
+  border-style: dotted;
+  border-color: antiquewhite;
+  padding-top: 10px;
+}
+
+.logo{
+  margin: auto;
+  display: flex;
+  padding-top: 10px;
+  width: auto;
+  height: 90px;
+}
+
+.circusImg{
+  width: auto;
+  height: 400px;
+  border-radius: 157px;
+  padding: 20px 20px 20px 150px;
+}
+
+.contentStartPage{
+  background-color: rgb(209, 198, 210);
+  border-radius: 8px 0px 0px 8px;
+  
+}
+
+.rightSide{
+  background-color: rgb(224, 121, 183);
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  border-radius: 0px 8px 8px 0px;
+  color: azure;
+}
+
+.startPageMain{
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px 0px 0px 8px;
+}
+
+/*-- Footer --*/
+
+.footer{
+  background-color: rgb(146, 49, 130);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.iconsFooter{
+  width: auto;
+  height: 25px;
+  padding-left: 5px;
+}
+
+.footerRow1{
+  display: flex;
+  flex-direction: column;
+  padding: -10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: azure;
+}
+
+/*--Line in the footer*/
+.vertical {
+  border-left: 1px solid azure;
+  height: 60px;
+  position: absolute;
+  left: 52%;
+  margin-top: 8px;
+}
+
+.footerRow2{
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+  padding-left: 25px;
+}
+
+.membersMain{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  background-color: rgb(224, 121, 183);
+  border-radius: 8px;
+  justify-content: space-evenly;
+}
+
+.memberBox{
+  align-items: center;
+}
+
+.membersH1, .filters{
+  color: rgb(227, 203, 17);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btnSort{
+  color: azure;
+  padding-left: 15px;
+}
+
+.btnSort:hover{
+  background-color: lawngreen;
+  padding: 5px;
+  border-radius: 5px;
+
+}
+
+.memberInfo{
+  background-color: rgb(209, 198, 210);
+  list-style: none;
+  border-radius: 8px;
+  padding: 10px 55px 8px 55px;
+  margin: 10px;
+}
+
+.userInfoMain, .createUserMain{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(224, 121, 183);
+  border-radius: 8px;
+  margin: auto;
+  justify-content: center;
+  align-items: baseline;
+}
+
+#deleteUserBtn, .btnUpdate, .createUserBtn{
+  background-color: lawngreen;
+  color: azure;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 8px;
+  border: none;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+}
+
+.userPageH4, .updateUserH4{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(227, 203, 17);
+  background-color: azure;
+  border-radius: 5px;
+  padding: 5px;
+
+}
+
+.userInfoBox, .userInfoBox2, .createNewUserForm{
+  background-color: rgb(209, 198, 210);
+  border-radius: 8px;
+  padding: 15px;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+  border-radius: 5px;
+  border: none;
+  padding: 3px;
+}
+
+.createUserLabel{
+  color: rgb(107, 105, 105);
+  font-size: 12px;
+}
+
+.createUserForm{
+  align-items: center;
+}
+
+.createUserBtn{
+  align-self: center;
+  margin-left: 68px;
+}
+
+.userFace{
+  width: auto;
+  height: 400px;
+  border-radius: 8px;
+}
+
+.memberMainBox1, .memberMainBox2, .memberMainBox3{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.userMask{
+  width: auto;
+  height: 80px;
+  border-radius: 6%;
+  margin-left: 12px;
+  border: 2px solid rgb(207, 250, 114);
+}
+
+.joinText{
+  color:rgb(81, 95, 171);
+}

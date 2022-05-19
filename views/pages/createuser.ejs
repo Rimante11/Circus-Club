@@ -1,0 +1,31 @@
+<%- include ('../partials/head')%>
+<%- include ('../partials/header')%>
+<main class="createUserMain">
+  <form class="createNewUserForm" action="/pages/members/createuser" method="post">
+    <img src="/images/userMask.jpg" alt="user-face" class="userMask">
+    <h2 class="joinText">Join Circus Club</h2>
+    <label class="createUserLabel" for="name">Name</label><br>
+    <input type="text" name="name" id="name">
+    <br>
+
+    <label class="createUserLabel" for="email">Email</label><br>
+    <input type="text" name="email" id="email">
+    <br>
+
+    <label class="createUserLabel" for="mobile">Mobile</label><br>
+    <input type="number" name="mobile" id="mobile">
+    <br>
+
+    <label class="createUserLabel" for="role">Role</label><br>
+    <input type="text" name="role" id="role">
+    <br>
+
+    <label class="createUserLabel" for="date">Date</label><br>
+    <input type="date" name="date" id="date">
+    <br><br>
+
+    <button class="createUserBtn">Save</button>
+
+  </form>
+</main>
+<%- include ('../partials/footer')%>
